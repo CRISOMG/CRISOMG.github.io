@@ -1,0 +1,227 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  width: auto;
+  height: 100vh;
+  background: url("./../assets/fondoEstelar.jpg");
+  background-size: 80%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+.SolarSistem picture {
+  object-fit: contain;
+  margin: 0 3%;
+}
+img {
+  width: 100%;
+}
+main {
+  width: auto;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.SolarSistem {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mercurio {
+  width: auto;
+  height: auto;
+}
+.venus {
+  width: auto;
+  height: auto;
+}
+.tierra-container {
+  margin: 0 50px;
+  width: 170px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tierra {
+  position: relative;
+  z-index: 4;
+}
+.luna-container {
+  width: 100%;
+  height: inherit;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  animation: orbit 12s infinite linear;
+}
+.luna {
+  width: 28%;
+  position: absolute;
+  top: -10%;
+}
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.marte {
+  width: auto;
+  height: auto;
+}
+.jupiter {
+  width: auto;
+  height: auto;
+}
+.saturno {
+  width: auto;
+  height: auto;
+}
+.urano {
+  width: auto;
+  height: auto;
+}
+.neptuno {
+  width: auto;
+  height: auto;
+}
+.profile {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin: 10px;
+  padding: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 80px 40px 40px 80px;
+}
+.profile_img {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.profile_description {
+  padding-left: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.profile_description p {
+  margin: 4px 0px;
+}
+
+.profile_name {
+}
+.profile_weight {
+}
+.profile_button {
+  position: absolute;
+  bottom: -10px;
+}
+.profile_button button {
+  border-radius: 40px;
+  background-color: rgba(64, 155, 46, 0.788);
+  border-color: green;
+}
+.form {
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 240px;
+  height: 120px;
+  margin: 10px 0px 0px;
+  border-radius: 16px;
+  background-color: white;
+}
+.form button {
+  /* position: absolute;
+  right: 0;
+  bottom: 0; */
+  width: auto;
+  height: 16px;
+  border: 2px solid rgb(19, 179, 19);
+  margin: 6px;
+  background-color: rgb(0, 223, 0);
+  font-size: 10px;
+  font-weight: bold;
+}
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 240px;
+  height: 120px;
+  margin: 10px 0px 0px;
+  border-radius: 12px;
+  background-color: white;
+}
+.modal.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal p {
+  margin: 16px 6px;
+}
+.modal input {
+  display: none;
+}
+.modal-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: 16px;
+  border: 2px solid rgb(204, 15, 15);
+  margin: 6px;
+  background-color: red;
+  font-size: 10px;
+  font-weight: bold;
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    border: 2px solid blue;
+  }
+  .SolarSistem picture {
+    margin: 0 3%;
+  }
+  .tierra-container {
+    margin: 0 25px;
+  }
+  .luna {
+    top: -10%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    border: 2px solid white;
+  }
+
+  .SolarSistem picture {
+    margin: 0 2%;
+  }
+  .tierra-container {
+    margin: 0px 20px;
+  }
+  .luna {
+    top: -10%;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Solar Sistem</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="profile">
+        <picture class="profile_img">
+          <img src="./assets/user-icon.webp" />
+          <div class="profile_button">
+            <button id="ButtonNewUser">
+              +
+            </button>
+          </div>
+        </picture>
+        <div class="profile_description">
+          <p class="profile_name" id="profile_name"></p>
+          <p class="profile_weight" id="profile_weight"></p>
+        </div>
+      </div>
+      <form class="form" id="form">
+        <label>¿Cual es tu Nombre?</label>
+        <input type="text" name="user" />
+        <label>¿Cual es tu Peso?</label>
+        <input type="number" name="weight" />
+        <button>Ok</button>
+      </form>
+      <div class="modal" id="modal">
+        <p></p>
+        <button class="modal-button" id="modal-button">X</button>
+      </div>
+      <section class="SolarSistem" id="SolarSistem">
+        <picture id="mercurio" class="mercurio">
+          <img src="./assets/mercurio.jpg" />
+        </picture>
+        <picture id="venus" class="venus">
+          <img src="./assets/venus.jpg" />
+        </picture>
+
+        <div class="tierra-container">
+          <img id="tierra" class="tierra" src="./assets/SingleTierra.png" />
+          <div class="luna-container">
+            <img id="luna" class="luna" src="./assets/SingleLuna.png" />
+          </div>
+        </div>
+
+        <picture id="marte" class="marte">
+          <img src="./assets/marte.jpg" />
+        </picture>
+        <picture id="jupiter" class="jupiter">
+          <img src="./assets/jupiter.jpg" />
+        </picture>
+        <picture id="saturno" class="saturno">
+          <img src="./assets/saturno.jpg" />
+        </picture>
+        <picture id="urano" class="urano">
+          <img src="./assets/urano.jpg" />
+        </picture>
+        <picture id="neptuno" class="neptuno">
+          <img src="./assets/neptuno.jpg" />
+        </picture>
+      </section>
+    </main>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
