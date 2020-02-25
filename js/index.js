@@ -22,3 +22,5 @@ const Planets = [
 Planets.forEach(planet => {
     planet.activatePlanet(user);
 })
+
+alert('Gafo el que lo lea xD')
